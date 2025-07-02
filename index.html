@@ -8,25 +8,56 @@
     <style>
       body {
         font-family: 'Segoe UI', sans-serif;
-        background-color: #f8f9fa;
-        color: #212529;
+        background-color: #f0f4f8;
+        color: #1c1c1c;
         padding-top: 60px;
       }
       .hero {
         text-align: center;
         padding: 2rem;
-        background: #ffffff;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        background: linear-gradient(145deg, #e2ecf4, #ffffff);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         margin-bottom: 2rem;
+        border-radius: 1rem;
+      }
+      .hero h1 {
+        font-weight: 700;
+        color: #003366;
+      }
+      .hero p {
+        font-size: 1.1rem;
+        color: #2a2a2a;
+      }
+      h2 {
+        color: #004c99;
+        font-weight: 600;
       }
       .project-card {
         margin-bottom: 1.5rem;
+      }
+      .card-title {
+        color: #003366;
+        font-weight: 600;
+      }
+      .card-text {
+        font-size: 0.95rem;
+        color: #333;
       }
       footer {
         padding: 1rem;
         text-align: center;
         font-size: 0.9rem;
         color: #6c757d;
+        margin-top: 2rem;
+        border-top: 1px solid #ddd;
+      }
+      .news-section {
+        background: #ffffff;
+        padding: 1rem 1.5rem;
+        border-left: 5px solid #0077cc;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
       }
     </style>
   </head>
@@ -35,12 +66,12 @@
       <div class="hero">
         <img src="./images/profile5.jpg" class="rounded-circle mb-3" width="140" alt="Profile">
         <h1>Yusuf Hakan Usta</h1>
-        <p>Mechanobiology | Regenerative Medicine | Multi-Omics | Data Science</p>
+        <p>Mechanobiology | Multi-Omics | Machine Learning | Stem Cell Biology</p>
         <div>
-          <a href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ" class="btn btn-outline-dark btn-sm m-1">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ" class="btn btn-outline-primary btn-sm m-1">Google Scholar</a>
           <a href="https://github.com/yusufhakanusta" class="btn btn-outline-dark btn-sm m-1">GitHub</a>
-          <a href="https://uk.linkedin.com/in/yusuf-hakan-usta-mres-238895213/" class="btn btn-outline-dark btn-sm m-1">LinkedIn</a>
-          <a href="mailto:hakanusta.yusuf@gmail.com" class="btn btn-outline-dark btn-sm m-1">Email</a>
+          <a href="https://uk.linkedin.com/in/yusuf-hakan-usta-mres-238895213/" class="btn btn-outline-info btn-sm m-1">LinkedIn</a>
+          <a href="mailto:hakanusta.yusuf@gmail.com" class="btn btn-outline-secondary btn-sm m-1">Email</a>
         </div>
       </div>
 
@@ -81,6 +112,22 @@
         <ul>
           <li><a href="./usta_cv.pdf" target="_blank">Download CV (PDF)</a></li>
           <li><a href="./20220906workpie_v4.pdf" target="_blank">Project Overview</a></li>
+        </ul>
+      </section>
+
+      <section class="mt-4">
+        <h2>Publications</h2>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ" target="_blank">View my full publication list on Google Scholar</a></li>
+        </ul>
+      </section>
+
+      <section class="news-section">
+        <h2>News & Updates</h2>
+        <ul>
+          <li><strong>Jul 2025:</strong> Submitted manuscript on chromatin adaptation to mechanical cues (under review).</li>
+          <li><strong>Jun 2025:</strong> Invited speaker at the ISMB Multi-Omics Integration Workshop.</li>
+          <li><strong>Apr 2025:</strong> Released an R package for pathway-constrained autoencoder analysis.</li>
         </ul>
       </section>
 
