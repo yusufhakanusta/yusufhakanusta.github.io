@@ -1,1 +1,0 @@
-# yusufhakanusta.github.io
