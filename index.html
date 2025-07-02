@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yusuf Hakan Usta | Bioinformatics & Molecular Biology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: url('./images/lab-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #1c1c1c;
+        padding-top: 60px;
+        backdrop-filter: blur(6px);
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .hero {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: linear-gradient(145deg, #d1e9ff, #ffffff);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+      }
+      .hero h1 {
+        font-weight: 700;
+        color: #003366;
+      }
+      .hero p {
+        font-size: 1.1rem;
+        color: #2a2a2a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <img src="./images/profile.jpg" class="rounded-circle mb-3" width="160" alt="Profile">
+        <h1>Yusuf Hakan Usta</h1>
+        <p>Bioinformatics | Molecular Biology | Multi-Omics | AI in Biomedicine</p>
+        <div>
+          <a href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ" class="btn btn-outline-primary btn-sm m-1">Google Scholar</a>
+          <a href="https://github.com/yusufhakanusta" class="btn btn-outline-dark btn-sm m-1">GitHub</a>
+          <a href="https://uk.linkedin.com/in/yusuf-hakan-usta-mres-238895213/" class="btn btn-outline-info btn-sm m-1">LinkedIn</a>
+          <a href="mailto:hakanusta.yusuf@gmail.com" class="btn btn-outline-secondary btn-sm m-1">Email</a>
+        </div>
+      </div>
+      <div class="my-4">
+        <h2>Blog</h2>
+        <div id="blog" class="p-3 border bg-light"></div>
+      </div>
+    </div>
+    <script>
+      fetch('blog.md')
+        .then(res => res.text())
+        .then(md => {
+          document.getElementById('blog').innerHTML = marked.parse(md);
+          MathJax.typeset();
+        });
+    </script>
+  </body>
+</html>
