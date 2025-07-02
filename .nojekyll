@@ -1,3 +1,0 @@
-git add .nojekyll
-git commit -m "Fix GitHub Pages: disable Jekyll with .nojekyll"
-git push origin main
