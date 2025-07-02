@@ -1,67 +1,92 @@
 <!doctype html>
-<html lang="en-UK">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-		<!-- Begin Jekyll SEO tag v2.4.0 -->
-		<title>yusufhakanusta.github.io</title>
-		<meta name="generator" content="Jekyll v3.7.3" />
-		<meta property="og:title" content="yusufhakanusta.github.io" />
-		<meta property="og:locale" content="en_UK" />
-		<meta name="description" content="yusufhakanusta's project homepage" />
-		<meta property="og:description" content="yusufhakanusta's project homepage" />
-		<link rel="canonical" href="https://yusufhakanusta.github.io/" />
-		<meta property="og:url" content="https://yusufhakanusta.github.io/" />
-		<meta property="og:site_name" content="yusufhakanusta.github.io" />
-		<script type="application/ld+json">
-		{"name":"yusufhakanusta.github.io","description":"yusufhakanusta's project homepage","@type":"Website","url":"https://yusufhakanusta.github.io/","headline":"yusufhakanusta.github.io","@context":"http://schema.org"}</script>
-		<!-- End Jekyll SEO tag -->
-		<link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=b34c3264c1061fa4eec4f11efee571719845aae0">
-    <script src="/assets/js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yusuf Hakan Usta | Academic Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+        padding-top: 60px;
+      }
+      .hero {
+        text-align: center;
+        padding: 2rem;
+        background: #ffffff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+      }
+      .project-card {
+        margin-bottom: 1.5rem;
+      }
+      footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+    </style>
   </head>
-	<body>
-		<div class="wrapper">
-      <header>
-        <h1 class="header">Yhakanusta</h1>
-				<p>Bioinformatics, ML,  multi-omics, Data Science, Mechanobiology, Stem cells, Regenerative medicine.</p>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <img src="./images/profile5.jpg" class="rounded-circle mb-3" width="140" alt="Profile">
+        <h1>Yusuf Hakan Usta</h1>
+        <p>Mechanobiology | Regenerative Medicine | Multi-Omics | Data Science</p>
+        <div>
+          <a href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ" class="btn btn-outline-dark btn-sm m-1">Google Scholar</a>
+          <a href="https://github.com/yusufhakanusta" class="btn btn-outline-dark btn-sm m-1">GitHub</a>
+          <a href="https://uk.linkedin.com/in/yusuf-hakan-usta-mres-238895213/" class="btn btn-outline-dark btn-sm m-1">LinkedIn</a>
+          <a href="mailto:hakanusta.yusuf@gmail.com" class="btn btn-outline-dark btn-sm m-1">Email</a>
+        </div>
+      </div>
+
+      <section>
+        <h2>About Me</h2>
+        <p>I currently work in the <strong>Cell Matrix Biology and Regenerative Medicine</strong> division at the <strong>University of Manchester</strong>, where I combine <strong>biology and software engineering</strong> to investigate how stem cells sense and respond to mechanical and chemical cues in the context of <strong>aging, musculoskeletal diseases</strong>, and <strong>cancer</strong>.</p>
+        <p>My research focuses on the <strong>integration of multi-omics data, image-based profiling</strong>, and <strong>computational modelling</strong> to understand how cells adapt to their microenvironment. During my PhD, I specialized in <strong>mechanobiology and chromatin regulation</strong>, exploring how mechanical and biochemical signals converge to shape gene expression and cell fate.</p>
+        <p>I have developed end-to-end computational pipelines that integrate <strong>proteomics, phosphoproteomics, and metabolomics</strong> data under varying mechanical and chemical conditions to reveal regulatory networks involved in cellular adaptation. My work leverages <strong>machine learning</strong> alongside experimental validation (WB, IF, qRT-PCR, colorimetric assays) to model <strong>pathway activity</strong>, identify phenotypic drivers, and predict molecular responses.</p>
+        <p>In addition, I have built <strong>advanced image analysis pipelines</strong> to quantify protein localization and chromatin organization. Broadly, my aim is to develop <strong>AI-driven integrative frameworks</strong> that bridge <strong>multi-omics, microscopy, and molecular biology</strong> to advance our understanding of stem cell behavior and cancer progression.</p>
+      </section>
+
+      <section class="mt-4">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-6 project-card">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cell Morphology Analyzer</h5>
+                <p class="card-text">Python script to analyze cell shape and actin structure from phalloidin-stained microscopy images. Outputs Excel-based quantitative morphology features.</p>
+                <a href="https://github.com/yusufhakanusta/cell-analysis" class="btn btn-primary btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 project-card">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">GO Term NES Plotter (R)</h5>
+                <p class="card-text">R-based barplot tool for visualizing GO term enrichment with NES scores. Outputs high-resolution TIFFs for publications.</p>
+                <a href="https://github.com/yusufhakanusta/go-plotter" class="btn btn-primary btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4">
+        <h2>Downloads</h2>
         <ul>
-          <li><a class="buttons google_scholar" href="https://scholar.google.com/citations?user=PYFAJQgAAAAJ&hl=en">Publications</a></li>
-          <li><a class="buttons github" href="https://github.com/yusufhakanusta">GitHub</a></li>
-					<li><a class="buttons linkedin" href="https://uk.linkedin.com/in/yusuf-hakan-usta-mres-238895213/">LinkedIn</a></li>
-					<li><a class="buttons instagram" href="https://www.instagram.com/pacemtech/?hl=en">Instagram</a></li>
+          <li><a href="./usta_cv.pdf" target="_blank">Download CV (PDF)</a></li>
+          <li><a href="./20220906workpie_v4.pdf" target="_blank">Project Overview</a></li>
         </ul>
-        <p class="header">yusufhakanusta's scientific/academic project home page</p>
-      </header>
+      </section>
 
-			<section>
-				<a href="./index.html" target="_self"><img src="./images/profile5.jpg" alt="Venk" id="header_image"></a>
-        <p>
-          I currently work in the <a href="https://research.manchester.ac.uk/en/organisations/division-of-cell-matrix-biology-regenerative-medicine">Cell matrix biology and regenerative medicine division</a> at the University of Manchester. My work involves using biology and software engineering to understand how and why stem cells sense and response mechanical and chemical cues with aging, muscoluskeletal diseases or cancer.
-        </p>
-        <p> 
-	  My research focuses on the integration of multi-omics data, image-based profiling, and computational modelling to investigate how cells sense and adapt to their microenvironment. During my PhD, I was particularly interested in mechanobiology and chromatin regulation, where mechanical and biochemical cues converge to shape gene expression and cell fate. I developed computational pipelines to integrate proteomics, phosphoproteomics, and metabolomics data under mechanical and chemical stress, uncovering regulatory networks involved in cellular adaptation. I have combined machine learning with experimental validation (WB, IF, qRT-PCR, colorimetric measuring) to model pathway activity, identify phenotypic drivers, and predict molecular responses. My work also includes advanced image analysis pipelines for quantifying protein localisation and chromatin organization. My broader vision is to develop integrative AI frameworks that fuse multi-omics and molecular biology-based applications in stem cell biology and cancer.
-	</p>
-	</p>
-        <p>
-          <a href="./20220906workpie_v4.pdf" target="_self"><img src="./images/overview.jpg" alt="Proteomics, ageing and mechanotransduction" id="overview_image"></a>
-        </p>
-			</section>
-
-
-			
-			
-
-
-		<footer>
-			<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/cc_by_4p0.png"></a>
-			<p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a>, using the Dinky theme</small></p>
-		</footer>
-	</body>
+      <footer class="mt-5">
+        <p>&copy; 2024 Yusuf Hakan Usta. Hosted via <a href="https://pages.github.com">GitHub Pages</a>.</p>
+      </footer>
+    </div>
+  </body>
 </html>
